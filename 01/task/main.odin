@@ -1,4 +1,4 @@
-package aoc_01_a1
+package aoc_01_task
 
 import "core:os"
 import "core:fmt"
@@ -11,7 +11,7 @@ main :: proc() {
 }
 
 part_two :: proc() {
-	input, ok := os.read_entire_file("./input.txt", context.allocator)
+	input, _ := os.read_entire_file("./input.txt", context.allocator)
 	defer delete(input, context.allocator)
 
 	act := 50
@@ -27,7 +27,7 @@ part_two :: proc() {
 
 		num_len := len(val_str)
 		if num_len > 2 {
-			hundreds, ok := strconv.parse_int(val_str[:num_len - 2])
+			hundreds, _ := strconv.parse_int(val_str[:num_len - 2])
 
 			// fmt.println(line, num_len, hundreds)
 
@@ -35,7 +35,7 @@ part_two :: proc() {
 			val_str = val_str[(num_len - 2):]
 		}
 
-		val, ok := strconv.parse_int(val_str)
+		val, _ := strconv.parse_int(val_str)
 
 		v := dir == 'L' ? val * -1 : val
 		act += v
@@ -61,7 +61,7 @@ part_two :: proc() {
 }
 
 part_one :: proc() {
-	input, ok := os.read_entire_file("./input.txt", context.allocator)
+	input, _ := os.read_entire_file("./input.txt", context.allocator)
 	defer delete(input, context.allocator)
 
 	act := 50
@@ -76,7 +76,7 @@ part_one :: proc() {
 			val_str = val_str[(len(val_str) - 2):]
 		}
 
-		val, ok := strconv.parse_int(val_str)
+		val, _ := strconv.parse_int(val_str)
 
 		v := dir == 'L' ? val * -1 : val
 		act += v

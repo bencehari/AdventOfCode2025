@@ -4,7 +4,7 @@ I'm trying out [Odin](https://odin-lang.org/)
 | Day  | Part 1 | Part 2 |
 | :--: | :----: | :----: |
 |  01  | :star: | :star: |
-|  02  |        |        |
+|  02  | :star: | :star: |
 |  03  |        |        |
 |  04  |        |        |
 |  05  |        |        |
