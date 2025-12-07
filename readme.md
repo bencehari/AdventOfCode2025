@@ -5,7 +5,7 @@ I'm trying out [Odin](https://odin-lang.org/)
 | :--: | :----: | :----: |
 |  01  | :star: | :star: |
 |  02  | :star: | :star: |
-|  03  |        |        |
+|  03  | :star: | :star: |
 |  04  |        |        |
 |  05  |        |        |
 |  06  |        |        |
